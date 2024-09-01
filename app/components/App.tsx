@@ -18,6 +18,7 @@ import Visualizer from "./Visualizer";
 const App: () => JSX.Element = () => {
   const [caption, setCaption] = useState<string | undefined>(
     "Powered by Deepgram"
+    // section that gives the output as converted audio to text
   );
   const { connection, connectToDeepgram, connectionState } = useDeepgram();
   const { setupMicrophone, microphone, startMicrophone, microphoneState } =
@@ -119,9 +120,9 @@ const App: () => JSX.Element = () => {
           <div className="flex flex-col flex-auto h-full">
             {/* height 100% minus 8rem */}
             <div className="relative w-full h-full">
-              {microphone && <Visualizer microphone={microphone} />}
+              {/* {microphone && <Visualizer microphone={microphone} />} */}
               <div className="absolute bottom-[8rem]  inset-x-0 max-w-4xl mx-auto text-center">
-                {caption && <span className="bg-black/70 p-8">{caption}</span>}
+                {caption && <span className="bg-red-600 p-8">{caption}</span>}
               </div>
             </div>
           </div>
