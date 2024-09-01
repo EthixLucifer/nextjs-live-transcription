@@ -12,6 +12,7 @@ import {
   MicrophoneState,
   useMicrophone,
 } from "../context/MicrophoneContextProvider";
+
 import Visualizer from "./Visualizer";
 
 const App: () => JSX.Element = () => {
