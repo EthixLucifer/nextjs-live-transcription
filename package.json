@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/clerk-react": "^5.5.0",
+    "@clerk/nextjs": "^5.3.7",
     "@deepgram/sdk": "^3.3.0",
     "classnames": "^2.5.1",
     "next": "^14.1.3",
